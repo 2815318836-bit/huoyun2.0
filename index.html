@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>货运刷题</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">铁路货运组织 I</p>
+          <h1>货运刷题</h1>
+        </div>
+        <div class="top-stats" aria-live="polite">
+          <span id="totalCount">题库 0 题</span>
+          <span id="wrongCount">错题 0 题</span>
+        </div>
+      </header>
+
+      <div class="workspace">
+        <aside class="sidebar" aria-label="刷题设置">
+          <div class="section-title">题型</div>
+          <div class="type-tabs" id="typeTabs"></div>
+
+          <div class="section-title">组号</div>
+          <div class="group-list" id="groupList"></div>
+
+          <div class="sidebar-actions">
+            <button class="tool-button" id="showWrongBook" type="button">
+              <span aria-hidden="true">!</span>
+              <span>错题本</span>
+            </button>
+            <button class="tool-button quiet" id="clearProgress" type="button" title="清空错题本">
+              <span aria-hidden="true">×</span>
+              <span>清空错题</span>
+            </button>
+          </div>
+        </aside>
+
+        <main class="main-panel" id="mainPanel" tabindex="-1"></main>
+      </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
